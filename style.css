@@ -3,8 +3,22 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color:  antiquewhite;
+    padding: 0 16px;
 }
 
 body {
-    margin: 0;
+    margin: 5;
+}
+
+#mytitle {
+    color: darkviolet;
+}
+
+.container {
+    margin: 8px 32px;
+}
+
+input[type=number] {
+    width: 80;
 }
