@@ -1,5 +1,5 @@
-const myinput = document.getElementById("myinput")
+const account = document.getElementById("account")
 
 function add(){
-    myinput.value = Number(myinput.value) + 1
+    account.value = Number(account.value) + 1
 }
