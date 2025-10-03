@@ -9,10 +9,27 @@
 <body>
     <nav>
         <p>68070008</p>
-        <h2>ITF Website</h2>
+        <h1>ITF Website</h1>
         <p>Week 14</p>
     </nav>
-    Enter number: <input type="number" id="myinput" value="0">
+    <h1 id="mytitle">Welcome to my ITF Website!</h2>
+    <img src="stillInLove.jpg" width="400" alt="Still In Love">
+    <h4>ITF Simple First Web Bank</h4>
+    <hr>
+    <h1>Account Overview</h1>
+    <div class="container" style="display: grid;">
+        <img src="user.png" width="60">
+        <h2>Account Information</h2>
+        Name: Kantapong Kaphphan
+        <p>Type: Savinggs Account</p>
+    </div>
+    <h1>Balance Information</h1>
+    <div class="container" style="display: grid; grid-template-columns: auto ifr; gap: 10px;">
+        <img src="briefcase.png" width="60">
+        Current acount balance: <input type="number" id="account" value="0" size="4"><br>
+        Currect cash balance: <input type="number" id="cash" value="0">
+        <button>Change</button>
+    </div>
     <button onclick="add()">+1</button>
     <script src="script.js"></script>
 </body>
