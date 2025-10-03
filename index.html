@@ -16,21 +16,53 @@
     <img src="stillInLove.jpg" width="400" alt="Still In Love">
     <h4>ITF Simple First Web Bank</h4>
     <hr>
+    <div id="logBox"></div>
     <h1>Account Overview</h1>
-    <div class="container" style="display: grid;">
-        <img src="user.png" width="60">
-        <h2>Account Information</h2>
-        Name: Kantapong Kaphphan
-        <p>Type: Savinggs Account</p>
     </div>
-    <h1>Balance Information</h1>
-    <div class="container" style="display: grid; grid-template-columns: auto ifr; gap: 10px;">
-        <img src="briefcase.png" width="60">
-        Current acount balance: <input type="number" id="account" value="0" size="4"><br>
-        Currect cash balance: <input type="number" id="cash" value="0">
-        <button>Change</button>
+      <!-- Split Layout -->
+    <div class="container">
+    <!-- Left Section -->
+        <div class="section">
+            <img src="neo-universe-uma-musume.gif" width="100">
+            <h2><strong>Account Information</strong></h2>
+            <p>Name: Neo Universe</p>
+            <p>Type: Savings Account</p>
+
+            <div class="info-box">
+                <p><b>Balance Information</b></p>
+                <img src="briefcase.png" width="100"><br>
+                Current account balance: <input type="number" id="accountBalance" value="1000"><br>
+                Current cash balance: <input type="number" id="cashBalance" value="1000"><br>
+                <button onclick="changeBalance()">Change</button>
+            </div>
+
+            <div class="info-box">
+                <p><b>Bank Operation</b></p>
+                <img src="toolbox.png" width="100">
+                <select id="operation">
+                    <option value="deposit">Deposit</option>
+                    <option value="withdraw">Withdraw</option>
+                </select>
+                <input type="number" id="amount" placeholder="Enter amount">
+                <button onclick="proceed()">Proceed</button>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <h3>Financial Tools</h3>
+            <img src="gold.png" width="100">
+            <p><b>Currency Converter</b></p>
+            Input balance: <input type="number" id="inputBalance" value="0"><br>
+            Output balance: <input type="number" id="outputBalance" value="0" readonly><br>
+            Input currency:
+            <select id="currency">
+                <option value="USD">USD</option>
+                <option value="THB">THB</option>
+            </select>
+            <button onclick="convertCurrency()">Convert</button>
+        </div>
     </div>
-    <button onclick="add()">+1</button>
     <script src="script.js"></script>
 </body>
 </html>

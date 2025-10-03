@@ -11,14 +11,29 @@ body {
     margin: 5;
 }
 
-#mytitle {
-    color: darkviolet;
+textarea {
+  width: 95%;
+  margin-top: 10px;
+  height: 60px;
+  resize: none;
 }
 
 .container {
-    margin: 8px 32px;
+      display: flex;
+      justify-content: space-between;
 }
 
-input[type=number] {
-    width: 80;
-}
+#logBox {
+      width: 100%;
+      height: 300px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      overflow-y: auto;
+      font-size: 14px;
+      padding: 5px;
+      white-space: pre-line;
+    }
+
+.section { width: 45%; }
+
+.info-box { margin: 10px 0; }
